@@ -1,2 +1,2 @@
 # proform-grading
-Proform Grading Atlanta's website
+Website for Proform Grading Atlanta
