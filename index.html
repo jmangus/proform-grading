@@ -1,43 +1,70 @@
 <!doctype html>
 <html>
   <head>
-	 <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
-	 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	 <link href='css/main.css' rel='stylesheet' type='text/css'>
-	 <link rel="stylesheet" href="css/animate.css">
-	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	 <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-	 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Proform Grading - Metro Atlanta Grading and Hauling">
+	<meta name="keywords" content="grading, hauling, backfills, hauling, dirt, erosion, grades, atlanta, construction, land-grading, residential grading">
+	<meta name="author" content="Proform Grading">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Proform Grading</title>
+	<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='css/main.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   </head>
   <body>
-  	<div class="bumper" id="home">
+  	<div class="bumper" id="home"> <!--bumper for design-->
   	</div>
-	<div class="top-menu">
+  	<div class="mobile-toggle"><!-- mobile navigation-->
+  		<div class="mobile-nav-float">
+			<span></span>
+			<span></span>
+		    <span></span>
+		</div>
+	</div>
+	<div class="mobile-nav mobile-nav-hide"> <!-- mobile navigation-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mobile-nav-bar">
+					<ul>
+						<a href="#home"><li>Home</li></a>
+						<a href="#about"><li>About</li></a>
+						<a href="services.html"><li>Services</li></a>
+						<a href="contact.html"><li>Contact</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-menu"> <!--Desktop quick info menu -->
 		<div class="container">
 	  		<div class="row">
 		 		<div class="col-md-3 col-sm-12 col-xs-12 word-logo">
-					<img src="images/wordlogo.png" height="20px" width="auto">
+					<img src="images/wordlogo.png" alt="proform word logo" height="20px" width="auto">
 				</div>
 		 		<div class="col-md-9 col-sm-12 col-xs-12 top-list">
 					<ul class="long-list">
 						<li class="static-list list-border">
-							<img src="images/phonewhite.png" id="img-block" height="30px">
+							<img src="images/phonewhite.png" alt="phone" id="img-block" height="30px">
 			  				<ol class="bold-list">
 			  					<li><strong>678-412-5935</strong></li>
-								<li id="list-gray">info@proformgrading.com</li>
+								<li id="list-gray"><a hfre="mailto:info@proformgrading.com">info@proformgrading.com</a></li>
 		  					</ol>
 		  				</li>
 		  				<li class="static-list list-border">
-		  					<img src="images/housewhite.png" height="30px" id="img-block">
+		  					<img src="images/housewhite.png" alt="house" height="30px" id="img-block">
 			  				<ol class="bold-list">
 			  					<li><strong>Canton, GA</strong></li>
-			  					<li id="list-gray">Servicing Metro Atlanta</li>
+			  					<li id="list-gray">Serving Metro Atlanta</li>
 			  				</ol>
 			  			</li>
+				  			
 			  			<li class="static-list">
-			  				<img src="images/clockwhite.png" height="30px" id="img-block">
+			  				<img src="images/clockwhite.png" alt="clock" height="30px" id="img-block">
 			  				<ol class="bold-list">
 			  					<li><strong>Mon - Sat 8:00 - 5:00</strong></li>
 			  					<li id="list-gray">Closed Sunday</li>
@@ -48,14 +75,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav">
+	<div class="nav"> <!--Desktop navigation  -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 nav-bar">
 					<ul>
 						<a href="#home"><li>Home</li></a>
 						<a href="#about"><li>About</li></a>
-						<a href="#"><li>Services</li></a>
+						<a href="services.html"><li>Services</li></a>
 						<a href="contact.html"><li>Contact</li></a>
 					</ul>
 				</div>
@@ -66,7 +93,7 @@
 		<div class="container hero">     
 		  	<div class="row header-logo">
 				<div class="col-md-12 logo">
-					<img src="images/logowhite.png" alt="Proform Grading Logo" height="200px">
+					<img src="images/logowhite.png" class="img-responsive" alt="Proform Grading Logo" height="225px">
 			 	</div>
 		  	</div>
 	 	</div>
@@ -79,56 +106,57 @@
 				</div>
 			</div>
 			<div class="row main-middle-row">
-				<div class="col-md-4 col-sm-4 col-xs-12 main-block ">
-					<img src="images/whoweare.jpg" height="auto" class="img-responsive">
+				<div class="col-md-4 col-sm-4 col-xs-12 main-block">
+					<img src="images/whoweare.jpg" alt="hardhat" height="auto" class="img-responsive">
 					<h3>Who we are</h3>
-					<p>Duis vivamus nulla, aliquam ipsum elementum imperdiet nisl, velit turpis in quia nostra vitae. Mauris sapien cras id in, dictum vel posuere, porttitor ut felis mattis cras nec, primis consectetuer dolor sit omnis, dapibus aenean et phasellus adipiscing vel nonummy. Eget placerat duis duis praesent, praesent sit. Dolor amet est est, eu posuere pede vestibulum fermentum mauris aliquam</p>
+					<p>Proform Grading has over 25 years experience in all phases of grading throughout Metro Atlanta. From some of the biggest homebuilders in Atlanta, to the custom home builder, Proform Grading has built a quality reputation with service that speaks for itself.</p>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12 main-block center-main">
-					<img src="images/dirtdo.jpg" height="auto" class="img-responsive">
+					<img src="images/dirtdo.jpg" alt="grading" height="auto" class="img-responsive">
 					<h3>What we do</h3>
-					<p>Duis vivamus nulla, aliquam ipsum elementum imperdiet nisl, velit turpis in quia nostra vitae. Mauris sapien cras id in, dictum vel posuere, porttitor ut felis mattis cras nec, primis consectetuer dolor sit omnis, dapibus aenean et phasellus adipiscing vel nonummy. Eget placerat duis duis praesent, praesent sit. Dolor amet est est, eu posuere pede vestibulum fermentum mauris aliquam</p>
+					<p>At Proform Grading, we specialize in professional, reliable service. Our grading services include residential home site prep, land clearing, site clean-up, digging basements, and slab prep. We also haul any amount of material into or out of job sites. Hit rock? No problem. We can hammer most sites.</p>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12 main-block ">
-					<img src="images/home2.jpg" height="auto" class="img-responsive">
+					<img src="images/home2.jpg" alt="construction" height="auto" class="img-responsive">
 					<h3>Why PROFORM</h3>
-					<p>Duis vivamus nulla, aliquam ipsum elementum imperdiet nisl, velit turpis in quia nostra vitae. Mauris sapien cras id in, dictum vel posuere, porttitor ut felis mattis cras nec, primis consectetuer dolor sit omnis, dapibus aenean et phasellus adipiscing vel nonummy. Eget placerat duis duis praesent, praesent sit. Dolor amet est est, eu posuere pede vestibulum fermentum mauris aliquam</p>
+					<p>With 25 years of experience managing job sites, we have graded everything from wet areas to hillsides and valleys. Our projects range from townhouse and tract sites to multimillion dollar custom homes. Let Proform manage your next grading project. Experience saves time and money.</p>
 				</div>
 			</div>
 			<div class="row main-bottom-row">
 				<div class="col-md-12 main-block ">
 					<h3>See the PROFORM Difference</h3>
-					<p>Duis vivamus nulla, aliquam ipsum elementum imperdiet nisl, velit turpis in quia nostra vitae. Mauris sapien cras id in, dictum vel posuere, porttitor ut felis mattis cras nec, primis consectetuer dolor sit omnis, dapibus aenean et phasellus adipiscing vel nonummy. Eget placerat duis duis praesent, praesent sit. Dolor amet est est, eu posuere pede vestibulum fermentum mauris aliquam</p>
+					<h4>For questions about our services, abilities, quotes, and general information, give us a call at <strong>678-412-5935</strong>.</h4>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="buffer">
-	</div>
-	<div class="footer">
+	<div class="footer"><!--Footer -->
 		<div class="container">
-		  <div class="row">
-			 <div class="col-md-12">
-				<h5><span id="gold">PRO</span>FORM GRADING</h5>
-				<p>Canton, GA 30115</p>
-				<p>678-412-5935 | sales@proformgrading.com</p>
-		  </div>
-		  <div class="row">
-			 <div class="col-md-12">
-				<p>&copy 2015 PROFORM Grading. All rights reserved.</p>
-		  </div>
-		</div>
+		  	<div class="row">
+			 	<div class="col-md-12">
+					<h5><span id="gold">PRO</span>FORM GRADING</h5>
+					<p>Canton, GA 30115</p>
+					<p id="footer-link">678-412-5935 | <a hfre="mailto:info@proformgrading.com">info@proformgrading.com</a></p>
+		  		</div>
+		  	</div> 
+		 	<div class="row">
+			 	<div class="col-md-12">
+					<p>&copy 2016 PROFORM Grading. All rights reserved.</p>
+		  		</div>
+			</div>
+	 	</div>
 	 </div>
 	 <script>
-	 var mn = $(".main-nav");
-	 $(window).scroll(function(){
-		if($(this).scrollTop() > 30 ){
-		  mn.addClass("main-nav-scrolled");
-		}
-		else {
-		  mn.removeClass("main-nav-scrolled");
-		}
-	 });
+	 //mobile navigation toggle button
+		$(document).ready(function(){
+    		$(".mobile-toggle").click(function(){
+        		if ($(".mobile-nav").hasClass("mobile-nav-hide")) {
+        			$(".mobile-nav").removeClass("mobile-nav-hide");
+        		} else {
+        			$(".mobile-nav").addClass("mobile-nav-hide");
+        		}
+    		});
+    	});
 	 </script>
   </body>
 </html>
